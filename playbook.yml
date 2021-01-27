@@ -3,5 +3,5 @@
   hosts: "local"
   gather_facts: true
 - name: Print debug
-  ansible.builtin.debug:
+  debug:
     msg: User {{ user }} with password {{ password }}
