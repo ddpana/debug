@@ -1,7 +1,8 @@
 ---
 - name: Install All Roles
-  hosts: "local"
+  hosts: 127.0.0.1
+    connection: local
   gather_facts: true
-pre_tasks:
-- debug:
-    msg: User {{ user }} with password {{ password }}
+  tasks:
+    - debug:
+      msg: User {{ user }} with password {{ password }}
