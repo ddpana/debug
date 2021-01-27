@@ -6,4 +6,4 @@
   
   tasks:
   - debug:
-      msg: User {{ user }} with password {{ password }}
+      msg: User {{ myroot_user }} with password {{ myroot_password }}
