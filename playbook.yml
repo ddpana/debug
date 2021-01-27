@@ -2,6 +2,5 @@
 - name: Install All Roles
   hosts: "local"
   gather_facts: true
-- name: Print debug
-  debug:
+- debug:
     msg: User {{ user }} with password {{ password }}
