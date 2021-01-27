@@ -4,5 +4,5 @@
     # connection: local
   gather_facts: true
   tasks:
-    - debug:
-      msg: User {{ user }} with password {{ password }}
+  - debug:
+    msg: User {{ user }} with password {{ password }}
