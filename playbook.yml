@@ -2,5 +2,6 @@
 - name: Install All Roles
   hosts: "local"
   gather_facts: true
+pre_tasks:
 - debug:
     msg: User {{ user }} with password {{ password }}
