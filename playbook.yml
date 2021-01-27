@@ -1,0 +1,7 @@
+---
+- name: Install All Roles
+  hosts: "local"
+  gather_facts: true
+- name: Print debug
+  ansible.builtin.debug:
+    msg: User {{ user }} with password {{ password }}
