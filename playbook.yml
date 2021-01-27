@@ -3,6 +3,7 @@
   hosts: 127.0.0.1
     # connection: local
   gather_facts: true
+  
   tasks:
   - debug:
-    msg: User {{ user }} with password {{ password }}
+      msg: User {{ user }} with password {{ password }}
